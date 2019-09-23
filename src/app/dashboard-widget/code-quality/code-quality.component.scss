@@ -1,0 +1,20 @@
+.grade { grid-area: grade; }
+.item1 { grid-area: unitTest; }
+.item2 { grid-area: maintain; }
+.item3 { grid-area: ruleViol; }
+.item4 { grid-area: buildPass; }
+.item5 { grid-area: unitTestlbl; }
+.item6 { grid-area: maintainlbl; }
+.item7 { grid-area: ruleViollbl; }
+.item8 { grid-area: buildPasslbl; }
+.header { grid-area: header; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header grade unitTestlbl maintainlbl'
+    'header grade unitTest maintain'
+    'header ruleViollbl ruleViollbl buildPasslbl'
+    'header ruleViol ruleViol buildPass';
+  padding: 10px;
+  }

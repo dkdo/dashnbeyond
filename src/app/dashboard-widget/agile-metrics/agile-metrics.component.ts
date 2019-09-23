@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'agile-metrics',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./agile-metrics.component.scss']
 })
 export class AgileMetricsComponent implements OnInit {
+
+  @Input()
+  Project;
 
   constructor() { }
 

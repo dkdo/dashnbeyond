@@ -1,10 +1,32 @@
 <div class="grade-card mat-elevation-z4 ">
-  <div fxLayout="row" fxLayoutAlign="start" class="mat-headline">
-    <h3>
+  <div class="grid-container">
+    <div class="header">
       AGILE METRICS
-    </h3>
-  </div>
-  <div fxLayout="row" fxLayoutAlign="center">
-    B
+    </div>
+
+    <div class="grade">
+        {{Project.AgileMetrics}}
+    </div>
+    <div class="item1">{{Project.PointsDelivered}}</div>
+    <div class="item2">{{Project.BacklogSize}}</div>
+    <div class="item3">{{Project.Complete}}</div>
+
+    <div class="item4">{{Project.LastSprintVelocity}}</div>
+    <div class="item5">{{Project.PlannedActualVelocity}}</div>
+
+    <div class="item6">{{Project.AchieveGoal}}</div>
+    <div class="item7">{{Project.VelocityVariance}}</div>
+    <div class="item8">{{Project.ReadyVsTeamVelocity}}</div>
+
+    <div class="item9">Points Delivered</div>
+    <div class="item10">Total Backlog Size</div>
+    <div class="item11">Complete</div>
+
+    <div class="item12">Last Sprint Velocity</div>
+    <div class="item13">Planned vs Actual Velocity</div>
+
+    <div class="item14">Achieved Sprint Goal</div>
+    <div class="item15">Velocity Variance</div>
+    <div class="item16">Ready vs Team Velocity</div>
   </div>
 </div>

@@ -1,10 +1,27 @@
 <div class="grade-card mat-elevation-z4 ">
-  <div fxLayout="row" fxLayoutAlign="start" class="mat-headline">
-    <h3>
-      QUALITY
-    </h3>
-  </div>
-  <div fxLayout="row" fxLayoutAlign="center">
-    B
-  </div>
+    <div class="grid-container">
+        <div class="header">
+          QUALITY
+        </div>
+
+        <div class="grade">
+            {{Project.Quality}}
+        </div>
+        <div class="item1">{{Project.Blocking}}</div>
+        <div class="item2">{{Project.NonBlocking}}</div>
+        <div class="item3">{{Project.Cosmetic}}</div>
+
+        <div class="item4">{{Project.Security}}</div>
+        <div class="item5">{{Project.SecurityRatio}}</div>
+
+        <div class="item6">{{Project.Performance}}</div>
+
+        <div class="item7">Blocking</div>
+        <div class="item8">Non Blocking</div>
+
+        <div class="item9">Cosmetic</div>
+        <div class="item10">Security</div>
+        <div class="item11">Security to Total Defect Ratio</div>
+        <div class="item12">Performance</div>
+      </div>
 </div>

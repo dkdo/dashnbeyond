@@ -1,0 +1,26 @@
+.grade { grid-area: grade; }
+.item1 { grid-area: CI; }
+.item2 { grid-area: deploys; }
+.item3 { grid-area: config; }
+.item4 { grid-area: staticAnalysis; }
+.item5 { grid-area: branching; }
+.item6 { grid-area: permuatation; }
+.item7 { grid-area: CIlbl; }
+.item8 { grid-area: deployslbl; }
+.item9 { grid-area: configlbl; }
+.item10 { grid-area: staticAnalysislbl; }
+.item11 { grid-area: branchinglbl; }
+.item12 { grid-area: permuatationlbl; }
+.header { grid-area: header; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header grade CIlbl CIlbl'
+    'header grade CI CI'
+    'header deployslbl configlbl staticAnalysislbl'
+    'header deploys config staticAnalysis'
+    'header branchinglbl branchinglbl permuatationlbl'
+    'header branching branching permuatation';
+  padding: 10px;
+  }

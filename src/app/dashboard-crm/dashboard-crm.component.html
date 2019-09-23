@@ -1,15 +1,15 @@
 <div *ngIf="projectLoaded">
   <div fxLayout="row" fxLayoutAlign="center">{{project?.Name || "MOMO"}}</div>
   <div fxLayout="row wrap">
-    <project-health fxFlex="50" fxFlex.lt-sm="100" fxFlex.sm="100"></project-health>
-    <quality fxFlex="50" fxFlex.lt-sm="100" fxFlex.sm="100"></quality>
+    <project-health [Project]="project" fxFlex="50" fxFlex.lt-sm="100" fxFlex.sm="100"></project-health>
+    <quality [Project]="project" fxFlex="50" fxFlex.lt-sm="100" fxFlex.sm="100"></quality>
   </div>
   <div fxLayout="row wrap">
-    <agile-metrics fxFlex="50" fxFlex.lt-sm="100" fxFlex.sm="100"></agile-metrics>
-    <code-quality fxFlex="50" fxFlex.lt-sm="100" fxFlex.sm="100"></code-quality>
+    <agile-metrics [Project]="project" fxFlex="50" fxFlex.lt-sm="100" fxFlex.sm="100"></agile-metrics>
+    <code-quality [Project]="project" fxFlex="50" fxFlex.lt-sm="100" fxFlex.sm="100"></code-quality>
   </div>
   <div fxLayout="row wrap">
-    <releases fxFlex="50" fxFlex.lt-sm="100" fxFlex.sm="100"></releases>
-    <environment fxFlex="50" fxFlex.lt-sm="100" fxFlex.sm="100"></environment>
+    <releases [Project]="project" fxFlex="50" fxFlex.lt-sm="100" fxFlex.sm="100"></releases>
+    <environment [Project]="project" fxFlex="50" fxFlex.lt-sm="100" fxFlex.sm="100"></environment>
   </div>
 </div>

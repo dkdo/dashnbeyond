@@ -1,10 +1,27 @@
 <div class="grade-card mat-elevation-z4 ">
-  <div fxLayout="row" fxLayoutAlign="start" class="mat-headline">
-    <h3>
-     ENVIRONMENT
-    </h3>
-  </div>
-  <div fxLayout="row" fxLayoutAlign="center">
-    B
-  </div>
+    <div class="grid-container">
+        <div class="header">
+          ENVIRONMENT
+        </div>
+
+        <div class="grade">
+            {{Project.Environment}}
+        </div>
+        <div class="item1">{{Project.CIActivities}}</div>
+        <div class="item2">{{Project.DeploysTo}}</div>
+        <div class="item3">{{Project.ConfigurationManagement}}</div>
+
+        <div class="item4">{{Project.StaticAnalysis}}</div>
+        <div class="item5">{{Project.BranchingStrategy}}</div>
+        <div class="item6">{{Project.PermutationTestConfigured}}</div>
+
+
+        <div class="item7">CI Activities</div>
+
+        <div class="item8">Deploys To</div>
+        <div class="item9">Configuration Management</div>
+        <div class="item10">Static Analysis Tool</div>
+        <div class="item11">Branching Strategy</div>
+        <div class="item12">Permuation Test Configured</div>
+      </div>
 </div>

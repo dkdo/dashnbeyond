@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'environment',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./environment.component.scss']
 })
 export class EnvironmentComponent implements OnInit {
+
+  @Input()
+  Project;
 
   constructor() { }
 

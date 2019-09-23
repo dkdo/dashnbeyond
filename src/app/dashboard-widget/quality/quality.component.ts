@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'quality',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quality.scss']
 })
 export class QualityComponent implements OnInit {
+  @Input()
+  Project;
 
   constructor() { }
 

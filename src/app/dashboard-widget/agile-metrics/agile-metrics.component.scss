@@ -1,0 +1,30 @@
+.grade { grid-area: grade; }
+.item1 { grid-area: points; }
+.item2 { grid-area: backlog; }
+.item3 { grid-area: complete; }
+.item4 { grid-area: lastVelocity; }
+.item5 { grid-area: plannedActual; }
+.item6 { grid-area: sprintGoal; }
+.item7 { grid-area: variance; }
+.item8 { grid-area: readyRatio; }
+.item9 { grid-area: pointslbl; }
+.item10 { grid-area: backloglbl; }
+.item11 { grid-area: completelbl; }
+.item12 { grid-area: lastVelocitylbl; }
+.item13 { grid-area: plannedActuallbl; }
+.item14 { grid-area: sprintGoallbl; }
+.item15 { grid-area: variancelbl; }
+.item16 { grid-area: readyRatiolbl; }
+.header { grid-area: header; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header grade pointslbl backloglbl completelbl'
+    'header grade points backlog complete'
+    'header grade lastVelocitylbl lastVelocitylbl plannedActuallbl'
+    'header grade lastVelocity lastVelocity plannedActual'
+    'header sprintGoallbl sprintGoallbl variancelbl readyRatiolbl'
+    'header sprintGoal sprintGoal variance readyRatio';
+  padding: 10px;
+  }

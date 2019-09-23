@@ -1,10 +1,22 @@
 <div class="grade-card mat-elevation-z4 ">
-  <div fxLayout="row" fxLayoutAlign="start" class="mat-headline">
-    <h3>
-      CODE QUALITY
-    </h3>
-  </div>
-  <div fxLayout="row" fxLayoutAlign="center">
-    B
-  </div>
+    <div class="grid-container">
+        <div class="header">
+          CODE QUALITY
+        </div>
+
+        <div class="grade">
+            {{Project.CodeQuality}}
+        </div>
+        <div class="item1">{{Project.UnitTest}}</div>
+        <div class="item2">{{Project.MaintainabilityIndex}}</div>
+        <div class="item3">{{Project.RuleViolation}}</div>
+
+        <div class="item4">{{Project.BuildPassRate}}</div>
+        <div class="item5">Unit Test Code Coverage</div>
+
+        <div class="item6">Maintainability Index</div>
+
+        <div class="item7">Static Rule Violations and Warnings</div>
+        <div class="item8">Build Pass Rate</div>
+      </div>
 </div>
