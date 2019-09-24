@@ -31,6 +31,9 @@ export class AppComponent implements OnInit {
         words = event.data.split('=');
         this.router.navigate(['/auth/dashboard'], {queryParams: {projectId: words[1]}});
       }
+      if (typeof event.data === 'string' && event.data.includes('/auth/tables')) {
+        this.router.navigate(['/auth/tables']);
+      }
     });
   }
 
