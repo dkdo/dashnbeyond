@@ -1,4 +1,4 @@
-import { environmentDash } from './environment.dash';
+import {environmentDash} from './environment.dash';
 
 export const environment = {
   production: false,
