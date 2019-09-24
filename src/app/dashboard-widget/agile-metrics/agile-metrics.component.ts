@@ -3,7 +3,7 @@ import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'agile-metrics',
   templateUrl: './agile-metrics.component.html',
-  styleUrls: ['./agile-metrics.component.scss']
+  styleUrls: ['./agile-metrics.component.scss', '../card.scss']
 })
 export class AgileMetricsComponent implements OnInit {
 

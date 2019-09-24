@@ -1,0 +1,12 @@
+.grade-card {
+  height: 9em;
+}
+.vertical-text {
+  transform: translateY(280%) translateX(-40%) rotate(-90deg);
+  transform-origin: right, top;
+  -ms-transform: translateY(280%) translateX(-40%) rotate(-90deg);
+  -ms-transform-origin:right, top;
+  -webkit-transform: translateY(280%) translateX(-40%) rotate(-90deg);
+  -webkit-transform-origin:right, top;
+  position: absolute;
+}

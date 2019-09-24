@@ -12,7 +12,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let row of projects let i=index" (click)="goToDashboard(row.Id)">
+        <tr class="project-row" *ngFor="let row of projects let i=index" (click)="goToDashboard(row.Id)">
           <td [attr.data-label]="th.name" *ngFor="let th of helpers.header">
             <span>{{row[th.key]}}</span>
           </td>

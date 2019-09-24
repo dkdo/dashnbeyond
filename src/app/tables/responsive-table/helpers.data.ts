@@ -6,8 +6,8 @@ export const ResponsiveTableHelpers = {
       order: 'asc'
     },
     {
-      name: 'Project Rating',
-      key: 'ProjectRating',
+      name: 'Project Health',
+      key: 'ProjectHealth',
       order: 'asc'
     },
     {
