@@ -1,4 +1,5 @@
-<div class="grade-card mat-elevation-z4 ">
+<div class="grade-card mat-elevation-z4 " [ngClass]="{'A-grade': Project.Environment === 'A', 'B-grade': Project.Environment === 'B', 'C-grade': Project.Environment === 'C',
+'D-grade': Project.Environment === 'D', 'F-grade': Project.Environment === 'F'}">
     <div class="grid-container">
         <div class="header vertical-text">
           ENVIRONMENT
@@ -16,12 +17,12 @@
         <div class="item6">{{Project.PermutationTestConfigured}}</div>
 
 
-        <div class="item7">CI Activities</div>
+        <div class="item7 criteria">CI Activities</div>
 
-        <div class="item8">Deploys To</div>
-        <div class="item9">Configuration Management</div>
-        <div class="item10">Static Analysis Tool</div>
-        <div class="item11">Branching Strategy</div>
-        <div class="item12">Permuation Test Configured</div>
+        <div class="item8 criteria">Deploys To</div>
+        <div class="item9 criteria">Configuration Management</div>
+        <div class="item10 criteria">Static Analysis Tool</div>
+        <div class="item11 criteria">Branching Strategy</div>
+        <div class="item12 criteria">Permuation Test Configured</div>
       </div>
 </div>

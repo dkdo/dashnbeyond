@@ -1,4 +1,5 @@
-<div class="grade-card mat-elevation-z4 ">
+<div class="grade-card mat-elevation-z4 " [ngClass]="{'A-grade': Project.AgileMetrics === 'A', 'B-grade': Project.AgileMetrics === 'B', 'C-grade': Project.AgileMetrics === 'C',
+'D-grade': Project.AgileMetrics === 'D', 'F-grade': Project.AgileMetrics === 'F'}">
   <div class="grid-container">
     <div class="header vertical-text">
       AGILE METRICS
@@ -18,15 +19,15 @@
     <div class="item7">{{Project.VelocityVariance}}</div>
     <div class="item8">{{Project.ReadyVsTeamVelocity}}</div>
 
-    <div class="item9">Points Delivered</div>
-    <div class="item10">Total Backlog Size</div>
-    <div class="item11">Complete</div>
+    <div class="item9 criteria">Points Delivered</div>
+    <div class="item10 criteria">Total Backlog Size</div>
+    <div class="item11 criteria">Complete</div>
 
-    <div class="item12">Last Sprint Velocity</div>
-    <div class="item13">Planned vs Actual Velocity</div>
+    <div class="item12 criteria">Last Sprint Velocity</div>
+    <div class="item13 criteria">Planned vs Actual Velocity</div>
 
-    <div class="item14">Achieved Sprint Goal</div>
-    <div class="item15">Velocity Variance</div>
-    <div class="item16">Ready vs Team Velocity</div>
+    <div class="item14 criteria">Achieved Sprint Goal</div>
+    <div class="item15 criteria">Velocity Variance</div>
+    <div class="item16 criteria">Ready vs Team Velocity</div>
   </div>
 </div>

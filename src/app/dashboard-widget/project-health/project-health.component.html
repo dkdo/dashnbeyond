@@ -1,5 +1,6 @@
-<div class="grade-card mat-elevation-z4 ">
-    <div class="grid-container">
+<div class="grade-card mat-elevation-z4 " [ngClass]="{'A-grade': Project.ProjectHealth === 'A', 'B-grade': Project.ProjectHealth === 'B', 'C-grade': Project.ProjectHealth === 'C',
+'D-grade': Project.ProjectHealth === 'D', 'F-grade': Project.ProjectHealth === 'F'}">
+    <div class="grid-container project-health">
       <div class="vertical-text header">
         PROJECT HEALTH
       </div>

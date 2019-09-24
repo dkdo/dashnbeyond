@@ -1,12 +1,49 @@
 .grade-card {
-  height: 9em;
+  height: 10em;
+  font-family: roboto, serif;
+  padding: 10px;
+  margin: 7px;
 }
+
+.A-grade {
+  background-color: #AFF8B8;
+}
+
+.B-grade {
+  background-color: #E7FFAC;
+}
+
+.C-grade {
+  background-color: #FFFFD1;
+}
+
+.D-grade {
+  background-color: #FFCBC1;
+}
+
+.F-grade{
+  background-color: #FFABAB
+}
+
 .vertical-text {
-  transform: translateY(280%) translateX(-40%) rotate(-90deg);
+  transform: translateY(300%) translateX(-40%) rotate(-90deg);
   transform-origin: right, top;
-  -ms-transform: translateY(280%) translateX(-40%) rotate(-90deg);
+  -ms-transform: translateY(300%) translateX(-40%) rotate(-90deg);
   -ms-transform-origin:right, top;
-  -webkit-transform: translateY(280%) translateX(-40%) rotate(-90deg);
+  -webkit-transform: translateY(300%) translateX(-40%) rotate(-90deg);
   -webkit-transform-origin:right, top;
   position: absolute;
+  font-weight: bold;
+}
+
+.grid-container:not(.project-health) {
+  grid-template-columns: 45px auto;
+}
+
+div[class*="item"] {
+  text-align: center;
+}
+
+div[class*="item"]:not(.criteria) {
+  font-weight: bold;
 }
