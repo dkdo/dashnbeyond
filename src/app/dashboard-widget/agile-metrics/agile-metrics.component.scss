@@ -1,4 +1,7 @@
-.grade { grid-area: grade; }
+.grade {
+  grid-area: grade;
+  font-size: 80px;
+}
 .item1 { grid-area: points; }
 .item2 { grid-area: backlog; }
 .item3 { grid-area: complete; }

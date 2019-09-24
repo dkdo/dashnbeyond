@@ -1,5 +1,5 @@
 <div *ngIf="projectLoaded">
-  <div fxLayout="row" fxLayoutAlign="center">{{project?.Name || "MOMO"}}</div>
+  <div fxLayout="row" fxLayoutAlign="center"><span>{{project?.Name || "MOMO"}}</span></div>
   <div fxLayout="row wrap">
     <project-health [Project]="project" fxFlex="50" fxFlex.lt-sm="100" fxFlex.sm="100"></project-health>
     <quality [Project]="project" fxFlex="50" fxFlex.lt-sm="100" fxFlex.sm="100"></quality>
