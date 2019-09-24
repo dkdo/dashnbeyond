@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {
   trigger,
   state,
@@ -7,6 +7,8 @@ import {
   transition,
   query,
 } from '@angular/animations'
+import {Router} from "@angular/router";
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,9 +16,25 @@ import {
 
 
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'app';
+
+  constructor(private router: Router) {
+  }
+
+  ngOnInit() {
+    window.addEventListener('message', (event) => {
+
+      let words: string[];
+      console.log(event);
+      if (typeof event.data === 'string' && event.data.includes('/auth/dashboard?projectId=')) {
+        words = event.data.split('=');
+        this.router.navigate(['/auth/dashboard'], {queryParams: {projectId: words[1]}});
+      }
+    });
+  }
+
   getRouteAnimation(outlet) {
-      return outlet.activatedRouteData.animation
+    return outlet.activatedRouteData.animation
   }
 }
